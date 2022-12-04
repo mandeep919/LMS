@@ -1,0 +1,169 @@
+.center{
+    text-align: center;
+}
+.score-board {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/*      rps modes     */
+
+.modeholder {
+    border: #000000 3px solid;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.rpsmode {
+    position: absolute;
+    top: 35px;
+}
+
+/*      player labels     */
+/*.players-label{*/
+    /*text-transform: uppercase;*/
+/*}*/
+.scores{
+    font-weight: 900;
+}
+/*      players cabins      */
+#pvp{
+    display: none;
+}
+.playercabin {
+    padding: 40px;
+    border: #000 2px solid;
+    text-align: center;
+    position: relative;
+}
+.joinrpsbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 55;
+}
+.btn.btn-join {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    z-index: 56;
+    background-color: #ea9040;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 5px;
+}
+.playername {
+    position: absolute;
+    content: '';
+    z-index: 56;
+    left: 30%;
+    top: 40%;
+    display: none;
+}
+
+/*timer*/
+.timeform {
+    position: absolute;
+    left: 45%;
+    top: 35%;
+    z-index: 56;
+    display:none;
+}
+.timeform span{
+    color: #fff;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#pvc_playercabin2 .playername{
+    display: inline-block;
+    left: 40%;
+}
+.playername label, .playername button {
+    float: left;
+    height: 35px;
+}
+#pvc-join-name-c {
+    left: 40%;
+}
+.playername button{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.playername label input{
+    height:inherit;
+}
+.btn-play {
+    float: left;
+    background-color: #ea9040;
+    color: #fff;
+    font-weight: 800;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/*     rps options      */
+.rpsoption {
+    display: inline-block;
+    margin: 0 auto;
+}
+.rpsoptholder {
+    position: relative;
+    display: inline-block;
+}
+.rpsopt img {
+    height: 100%;
+}
+.rpsopt {
+    border: #000000 3px solid;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 15px;
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.rpsopt:last-child {
+    margin: 0;
+}
+.optkey {
+     position: absolute;
+     display: inline-block;
+     left: 8%;
+     top: 78%;
+     z-index: 50;
+     width: 23px;
+     height: 23px;
+     background: #f0dbdd;
+     border-radius: 50%;
+     line-height: 22px;
+ }
+
+.rulesbox{
+    margin-top: 10px;
+}
+.rulesbox h2 {
+    text-align: center;
+    text-decoration: double underline;
+    margin-bottom: 25px;
+}
+.rpsoption{
+    margin-bottom: 20px ;
+}
+.makemove{
+    display: none;
+}
+.Hide
+{
+    display:none;
+}

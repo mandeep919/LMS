@@ -1,0 +1,282 @@
+<html>
+<head>
+    <title>DW_assg</title>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="css/rps.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!--js-->
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+        <div class="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <h2>Rock Paper Scissor</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="rpsmode center">
+                            <div class="modeholder"><i class="fas fa-user-friends"></i></div>
+                            <div class="modeholder"><i class="fas fa-desktop"></i></div>
+                            <div class="modeholder"><i class="fas fa-users  "></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    score board         -->
+            <div class="score-board">
+            <div class="container">
+                <div class="row">
+                    <div class="sb-container">
+                        <div class="col-md-12 col-sm-12 col-xs-12 center">
+                            <span id="player1" class="players-label">Player 1</span>
+                            <span class="scores">
+                                <span id="score-1">0</span>:<span id="score-2">0</span>
+                            </span>
+                            <span id="player2" class="players-label">Player 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result">
+            <div class="roundresult">
+                <p>Paper beats Scissor <span>Player 1</span> Wins the round</p>
+            </div>
+            <div class="gameresult">
+                <p>Congrats! <span>Player </span> won the Game</p>
+            </div>
+        </div>
+
+<!--    players cabin           -->
+        <!--    players cabin (pvc)     -->
+        <div class="rpsplayers" id="pvc">
+            <div class="container">
+                <div class="row">
+
+                    <!--    PvC player 1    -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="playercabin" id="pvc_playercabin1">
+
+                            <!--    joinrps button    -->
+                            <div class="joinrps" id="joinrps-pvc-1">
+                                <div class="joinrpsbg"></div>
+                                <button id="join-Show" class="btn btn-join" type="submit">Join Now</button>
+                                <!--Playername-->
+                                <div class="playername Hide">
+                                    <label>
+                                        <input id="pvc-join-p"/>
+                                    </label>
+                                    <button id="btn-join-p" class="btn btn-play" type="submit">Play</button>
+                                </div>
+
+                                <!--Make your Move timer-->
+                                <div class="timeform" id="timeform_pvc_1">
+                                    <span id="time_pvc_1" class="time">3</span>
+                                </div>
+                            </div>
+
+                            <!--    rps options       -->
+                            <div class="rpsoption">
+                                <div class="rpsoptholder" id="pvc_r">
+                                    <div class="rpsopt optrock">
+                                        <img src="img/opt-rock.jpg" alt="rock">
+                                    </div>
+                                    <div class="optkeycircle">
+                                        <span class="optkey" id="pvc_keyrock1">a</span>
+                                    </div>
+                                </div>
+                                <div class="rpsoptholder" id="pvc_p">
+                                    <div class="rpsopt optpaper">
+                                        <img src="img/opt-paper.jpg" alt="paper">
+                                    </div>
+                                    <div class="optkeycircle">
+                                        <span class="optkey" id="pvc_keypaper1">s</span>
+                                    </div>
+                                </div>
+                                <div class="rpsoptholder" id="pvc_s">
+                                    <div class="rpsopt optscissor">
+                                        <img src="img/opt-scissor.jpg" alt="scissor">
+                                    </div>
+                                    <div class="optkeycircle">
+                                        <span class="optkey" id="pvc_keyscissor1">d</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="makemove">Make your Move</p>
+                        </div>
+                    </div>
+
+                    <!--    PvC player 2    -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="playercabin" id="pvc_playercabin2">
+                            <!--    joinrps button    -->
+                            <div class="joinrps">
+                                <div class="joinrpsbg"></div>
+                                <div class="playername">
+                                    <div id="pvc-join-c" class="btn btn-play">Computer</div>
+                                    <!--<button id="pvc-join-name-c" class="btn btn-play playername" type="submit">Computer</button>-->
+                                </div>
+                                <div class="timeform" id="timeform_pvc_2">
+                                    <span id="time_pvc_2" class="timer">3</span>
+                                </div>
+                            </div>
+                            <!--    rps options       -->
+                            <div class="rpsoption">
+                                <div class="rpsoptholder">
+                                    <div class="rpsopt optrock">
+                                        <img src="img/opt-rock.jpg" alt="rock">
+                                    </div>
+                                    <span class="optkey" id="pvc_keyrock2">j</span>
+                                </div>
+                                <div class="rpsoptholder">
+                                    <div class="rpsopt optpaper">
+                                        <img src="img/opt-paper.jpg" alt="paper">
+                                    </div>
+                                    <div class="optkeycircle">
+                                        <span class="optkey" id="pvc_keypaper2">k</span>
+                                    </div>
+                                </div>
+
+                                <div class="rpsoptholder">
+                                    <div class="rpsopt optscissor">
+                                        <img src="img/opt-scissor.jpg" alt="scissor">
+                                    </div>
+                                    <div class="optkeycircle">
+                                        <span class="optkey" id="pvc_keyscissor2">l</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="makemove">Making Move</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--    players cabin (pvp)     -->
+        <div class="rpsplayers" id="pvp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="playercabin" id="playercabin1">
+                            <!--    joinrps button    -->
+                            <div class="joinrps">
+                                <div class="joinrpsbg"></div>
+                                <!--<button class="btn btn-join" type="submit">Join Now</button>-->
+                                <div class="playername">
+                                    <label for="player1name"><input type="text" id="player1name"/></label>
+                                    <button class="btn btn-play" type="submit">Play</button>
+                                </div>
+                            </div>
+                            <!--    rps options       -->
+                            <div class="rpsoption">
+                                <div class="rpsoptholder">
+                                    <div class="rpsopt optrock">
+                                        <img src="img/opt-rock.jpg" alt="rock">
+                                    </div>
+                                    <div class="optkeycircle">
+                                        <span class="optkey" id="keyrock1">a</span>
+                                    </div>
+                                </div>
+                                <div class="rpsoptholder">
+                                    <div class="rpsopt optpaper">
+                                        <img src="img/opt-paper.jpg" alt="paper">
+                                    </div>
+                                    <div class="optkeycircle">
+                                        <span class="optkey" id="keypaper1">s</span>
+                                    </div>
+                                </div>
+
+                                <div class="rpsoptholder">
+                                    <div class="rpsopt optscissor">
+                                        <img src="img/opt-scissor.jpg" alt="scissor">
+                                    </div>
+                                    <div class="optkeycircle">
+                                        <span class="optkey" id="keyscissor1">d</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Make your Move</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="playercabin" id="playercabin2">
+                            <!--    joinrps button    -->
+                            <div class="joinrps">
+                                <div class="joinrpsbg"></div>
+                                <button class="btn btn-join" type="submit">Join Now</button>
+
+                            </div>
+                            <!--    rps options       -->
+                            <div class="rpsoption">
+                                <div class="rpsoptholder">
+                                    <div class="rpsopt optrock">
+                                        <img src="img/opt-rock.jpg" alt="rock">
+                                    </div>
+                                    <span class="optkey" id="keyrock2">j</span>
+                                </div>
+                                <div class="rpsoptholder">
+                                    <div class="rpsopt optpaper">
+                                        <img src="img/opt-paper.jpg" alt="paper">
+                                    </div>
+                                    <div class="optkeycircle">
+                                        <span class="optkey" id="keypaper2">k</span>
+                                    </div>
+                                </div>
+
+                                <div class="rpsoptholder">
+                                    <div class="rpsopt optscissor">
+                                        <img src="img/opt-scissor.jpg" alt="scissor">
+                                    </div>
+                                    <div class="optkeycircle">
+                                        <span class="optkey" id="keyscissor2">l</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p id="labelmove">Make your Move</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rulesbox">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="rules">
+                            <h2>Rules of R.P.S.</h2>
+                            <p>1. Player should enter his/her name.</p>
+                            <p>2. Watch the timer and when "Make your Move" appears, Each player should make their move and wait for result</p>
+                            <p>4. Rock beats scissor, Scissor beats Paper & Paper beats Rock</p>
+                            <p>5. Each win counts 1 win round of a game and there are 5 rounds in a game</p>
+                            <p>6. Player winning 3 round wins the game</p>
+                            <p>7. Good Luck, Have Fun</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="js/rps.js"></script>
+</body>
+
+</html>
