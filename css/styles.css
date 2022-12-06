@@ -48,9 +48,6 @@ body{
 }
 
 /* header */
-.page-contents {
-    width: 85.8%;
-}
 header {
     display: flex !important;
     width: 100%;
@@ -70,7 +67,7 @@ header .logo img {
 .searchbox {
     position: relative;
 }
-.searchbox i {
+.searchbox .search-icon {
     position: absolute;
     left: 4px;
     top: 7px;
@@ -154,8 +151,9 @@ ul.user-drop li {
 /*    Courses   */
 .course-progress {
     background: white;
-    margin: 20px;
+    margin: 20px 0 0 15px;
     border-radius: 12px;
+    padding: 15px;
 }
 .contents .title {
     padding: 15px;
@@ -165,7 +163,7 @@ ul.user-drop li {
     height: 4px;
     background: #dfdfdf;
 }
-.contents .line-half, aside .line-half {
+.mains .line-half, aside .line-half {
     background: #5742A9;
     width: 10%;
     height: 4px;
@@ -243,6 +241,7 @@ ul.user-drop li {
 .upcoming-assignments {
     background: white;
     margin: 20px;
+    padding: 15px;
     border-radius: 12px;
 }
 .assgtable {
@@ -282,6 +281,7 @@ tbody td {
     background: white;
     margin: 20px;
     border-radius: 12px;
+    padding: 15px;
 }
 .news-tab {
     display: flex;
@@ -304,7 +304,7 @@ tbody td {
     border-radius: 12px;
     overflow: hidden;
     height: 180px;
-    max-width: 200px;
+    width: 100%;
 }
 .news-detail p:first-child {
     color: #5742a9;
@@ -316,9 +316,6 @@ tbody td {
 }
 
 /* aside */
-aside {
-    width: 30%;
-}
 .upcoming-events {
     background: white;
     margin: 20px 0;

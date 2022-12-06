@@ -4,12 +4,14 @@
     <meta charset="utf-8" http-equiv="X-UA-Compatible" name="viewport" content="width=device-width, initial-scale=1">
 
     <!--css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
     <!--js-->
     <!-- <script src=""></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src=""></script>
 
 </head>
@@ -21,11 +23,11 @@
                 <span><i class="fa fa-bars-staggered"></i></span>  
             </div>
             <div class="icon">
-                <span><i class="fa-solid fa-grip-vertical"></i></span> 
+                <span><i class="fa fa-solid fa-grip-vertical"></i></span> 
                 <p>Dashboard</p>
             </div>
             <div class="icon">
-                <span><i class="fa-regular fa-note-sticky"></i></span> 
+                <span><i class="fa fa-regular fa-note-sticky"></i></span> 
                 <p>Assignment</p>
             </div>
             <div class="icon">
@@ -40,14 +42,14 @@
             <span><i class=""></i></span>
             
             <div class="icon">
-                <span><i class="fa-brands fa-gripfire"></i></span> 
+                <span><i class="fa fa-brands fa-gripfire"></i></span> 
                 <p>News</p>
             </div>
 
             <span><i class=""></i></span>
 
             <div class="icon">
-                <span><i class="fa-solid fa-table-tennis-paddle-ball"></i></span>
+                <span><i class="fa fa-solid fa-table-tennis-paddle-ball"></i></span>
                 <p>Sports</p>
             </div>
             
@@ -56,7 +58,7 @@
     <div class="page-contents">
         <header>
             <div class="logo"><img src="./media/lms.jpg" alt="lms logo"></div>
-            <div class="searchbar"> <div class="searchbox"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Type to search"></div></div>
+            <div class="searchbar"> <div class="searchbox"><i class="search-icon fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Type to search"></div></div>
             <div class="user-icons">
                 <div class="notifications">
                     <i class="fa fa-bell"></i>
@@ -86,244 +88,248 @@
                 </div>
             </div>
         </header>
-        <div class="mains">
-            <div class="contents">
-                <div class=" course-progress">
-                    <div class="title">
-                        <div class="line">
-                            <div class="line-half"></div>
+        <div class="mains">    
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                    <div class="course-progress">
+                        <div class="title">
+                            <div class="line">
+                                <div class="line-half"></div>
+                            </div>
+                            <h4>Courses Progress</h4>
                         </div>
-                        <h4>Courses Progress</h4>
+                        <div class="courses">
+                            <div class="card">
+                                <div class="percent">
+                                    <svg>
+                                    <circle cx="105" cy="105" r="100"></circle>
+                                    <circle cx="105" cy="105" r="100" style="--percent: 30"></circle>
+                                    </svg>
+                                    <div class="number">
+                                    <h3>30<span>%</span></h3>
+                                    </div>
+                                </div>
+                                <div class="title center">
+                                    <h4>Computer</h4>
+                                    <span>5 classes</span>
+                                </div>
+                            </div>
+                                        
+                            <div class="card">
+                                <div class="percent">
+                                    <svg>
+                                    <circle cx="105" cy="105" r="100"></circle>
+                                    <circle cx="105" cy="105" r="100" style="--percent: 26"></circle>
+                                    </svg>
+                                    <div class="number">
+                                    <h3>26<span>%</span></h3>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h2>CSS</h2>
+                                </div>
+                            </div>
+                        
+                            <div class="card">
+                                <div class="percent">
+                                    <svg>
+                                    <circle cx="105" cy="105" r="100"></circle>
+                                    <circle cx="105" cy="105" r="100" style="--percent: 37"></circle>
+                                    </svg>
+                                    <div class="number">
+                                    <h3>37<span>%</span></h3>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h2>JavaScript</h2>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="percent">
+                                    <svg>
+                                    <circle cx="105" cy="105" r="100"></circle>
+                                    <circle cx="105" cy="105" r="100" style="--percent: 30"></circle>
+                                    </svg>
+                                    <div class="number">
+                                    <h3>30<span>%</span></h3>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h2>CSS</h2>
+                                </div>
+                            </div>
+                        
+                            <div class="card">
+                                <div class="percent">
+                                    <svg>
+                                    <circle cx="105" cy="105" r="100"></circle>
+                                    <circle cx="105" cy="105" r="100" style="--percent: 45"></circle>
+                                    </svg>
+                                    <div class="number">
+                                    <h3>45<span>%</span></h3>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h2>JavaScript</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="courses">
-                        <div class="card">
-                            <div class="percent">
-                                <svg>
-                                <circle cx="105" cy="105" r="100"></circle>
-                                <circle cx="105" cy="105" r="100" style="--percent: 30"></circle>
-                                </svg>
-                                <div class="number">
-                                <h3>30<span>%</span></h3>
-                                </div>
+                    <div class="upcoming-assignments">
+                        <div class="title">
+                            <div class="line">
+                                <div class="line-half"></div>
                             </div>
-                            <div class="title center">
-                                <h4>Computer</h4>
-                                <span>5 classes</span>
-                            </div>
+                            <h4>Upcoming Assignment Dues</h4>
                         </div>
-                                    
-                        <div class="card">
-                            <div class="percent">
-                                <svg>
-                                <circle cx="105" cy="105" r="100"></circle>
-                                <circle cx="105" cy="105" r="100" style="--percent: 26"></circle>
-                                </svg>
-                                <div class="number">
-                                <h3>26<span>%</span></h3>
-                                </div>
-                            </div>
-                            <div class="title">
-                                <h2>CSS</h2>
-                            </div>
+                        <div class="assgtable">
+                            <table>
+                                <thead>
+                                    <th class="sub">Subjects | Topics</th>
+                                    <th class="due">Due Date</th>
+                                    <th class="rate">Submitted</th>
+                                    <th class="status">Status</th>
+                                    <th class="action">Action</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Computer || Algorithms</td>
+                                        <td>20 Dec 2022</td>
+                                        <td>20%</td>
+                                        <td>Waiting Evaluation</td>
+                                        <td><button>Resubmit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>EPH  ||  Ozone Layer</td>
+                                        <td>20 Dec 2022</td>
+                                        <td>30%</td>
+                                        <td>Waiting Evaluation</td>
+                                        <td><button>Resubmit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nepali ||  Shrutisambhinna</td>
+                                        <td>20 Dec 2022</td>
+                                        <td>40%</td>
+                                        <td>Waiting Evaluation</td>
+                                        <td><button>Resubmit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>English  ||  KIng and his kingdom..</td>
+                                        <td>20 Dec 2022</td>
+                                        <td>45%</td>
+                                        <td>Not Submitted</td>
+                                        <td><button>Submit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maths   ||   Derivative </td>
+                                        <td>20 Dec 2022</td>
+                                        <td>10%</td>
+                                        <td>Graded</td>
+                                        <td><button>View Grade</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Social   ||   Greater Nepal</td>
+                                        <td>20 Dec 2022</td>
+                                        <td>49%</td>
+                                        <td>Waiting Evaluation</td>
+                                        <td><button>Resubmit</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    
-                        <div class="card">
-                            <div class="percent">
-                                <svg>
-                                <circle cx="105" cy="105" r="100"></circle>
-                                <circle cx="105" cy="105" r="100" style="--percent: 37"></circle>
-                                </svg>
-                                <div class="number">
-                                <h3>37<span>%</span></h3>
-                                </div>
+                        
+                    </div>
+                    <div class="news">
+                        <div class="title">
+                            <div class="line">
+                                <div class="line-half"></div>
                             </div>
-                            <div class="title">
-                                <h2>JavaScript</h2>
-                            </div>
+                            <h4>All News and Transfer Today</h4>
                         </div>
 
-                        <div class="card">
-                            <div class="percent">
-                                <svg>
-                                <circle cx="105" cy="105" r="100"></circle>
-                                <circle cx="105" cy="105" r="100" style="--percent: 30"></circle>
-                                </svg>
-                                <div class="number">
-                                <h3>30<span>%</span></h3>
-                                </div>
-                            </div>
-                            <div class="title">
-                                <h2>CSS</h2>
-                            </div>
+                        <div class="news-tab">
+                            <div class="tab active">All News</div>
+                            <div class="tab">Today</div>
+                            <div class="tab">This Week</div>
+                            <div class="tab">This Month</div>
                         </div>
-                    
-                        <div class="card">
-                            <div class="percent">
-                                <svg>
-                                <circle cx="105" cy="105" r="100"></circle>
-                                <circle cx="105" cy="105" r="100" style="--percent: 45"></circle>
-                                </svg>
-                                <div class="number">
-                                <h3>45<span>%</span></h3>
+                        
+                        <div class="news-panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <div class="news-img"><img src="./media/arsenal.jpg" alt=""></div>
+                                    <div class="news-detail">
+                                        <p>04 Dec 2022</p>
+                                        <h4>Signs of Arsenal getting stronger in the Premier League</h4>
+                                        <p>The victory over Wolves provided a comfortable distance for Arsenal at the top of the Premier League standings</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="title">
-                                <h2>JavaScript</h2>
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <div class="news-img"><img src="./media/news - eudcationminister.jpg" alt=""></div>
+                                    <div class="news-detail">
+                                        <p>04 Dec 2022</p>
+                                        <h4>Education Minister appointed ...</h4>
+                                        <p>After election of 2022, newly formed government has elected education minister ...</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <div class="news-img"><img src="./media/news - student accident.jpg" alt=""></div>
+                                    <div class="news-detail">
+                                        <p>04 Dec 2022</p>
+                                        <h4>Student dies by a truck hit in...</h4>
+                                        <p>The victory over Wolves provided a comfortable distance for Arsenal at the top of the Premier League standings</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <div class="news-img"><img src="./media/new - spacesation .jpg" alt=""></div>
+                                    <div class="news-detail">
+                                        <p>04 Dec 2022</p>
+                                        <h4>What does the interior of a 110-cubic-meter space station look like?</h4>
+                                        <p>How do the astronauts sleep, eat, live and work inside? Do they have any leisure activities? Check out the video to find out. #SpaceChina #TiangongInOrbit</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <div class="news-img"><img src="./media/news - mbappe.jpg" alt=""></div>
+                                    <div class="news-detail">
+                                        <p>19 Nov 2022</p>
+                                        <h3>I'm here to win the World Cup, not the Golden Boot: Mbappe</h3>
+                                        <p>With superstar Kylian Mbappe's excellent performance, defending champion France defeated Poland 3-1 at Al Thuma Stadium on Sunday and entered the last eight of the World Cup 2022. 
+                                            Mbappe has also claimed the Golden Boot by being the top scorer in the World Cup in Qatar with 5 goals.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="upcoming-assignments">
-                    <div class="title">
-                        <div class="line">
-                            <div class="line-half"></div>
-                        </div>
-                        <h4>Upcoming Assignment Dues</h4>
-                    </div>
-                    <div class="assgtable">
-                        <table>
-                            <thead>
-                                <th class="sub">Subjects | Topics</th>
-                                <th class="due">Due Date</th>
-                                <th class="rate">Submitted</th>
-                                <th class="status">Status</th>
-                                <th class="action">Action</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Computer || Algorithms</td>
-                                    <td>20 Dec 2022</td>
-                                    <td>20%</td>
-                                    <td>Waiting Evaluation</td>
-                                    <td><button>Resubmit</button></td>
-                                </tr>
-                                <tr>
-                                    <td>EPH  ||  Ozone Layer</td>
-                                    <td>20 Dec 2022</td>
-                                    <td>30%</td>
-                                    <td>Waiting Evaluation</td>
-                                    <td><button>Resubmit</button></td>
-                                </tr>
-                                <tr>
-                                    <td>Nepali ||  Shrutisambhinna</td>
-                                    <td>20 Dec 2022</td>
-                                    <td>40%</td>
-                                    <td>Waiting Evaluation</td>
-                                    <td><button>Resubmit</button></td>
-                                </tr>
-                                <tr>
-                                    <td>English  ||  KIng and his kingdom..</td>
-                                    <td>20 Dec 2022</td>
-                                    <td>45%</td>
-                                    <td>Not Submitted</td>
-                                    <td><button>Submit</button></td>
-                                </tr>
-                                <tr>
-                                    <td>Maths   ||   Derivative </td>
-                                    <td>20 Dec 2022</td>
-                                    <td>10%</td>
-                                    <td>Graded</td>
-                                    <td><button>View Grade</button></td>
-                                </tr>
-                                <tr>
-                                    <td>Social   ||   Greater Nepal</td>
-                                    <td>20 Dec 2022</td>
-                                    <td>49%</td>
-                                    <td>Waiting Evaluation</td>
-                                    <td><button>Resubmit</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                </div>
-                <div class="news">
-                    <div class="title">
-                        <div class="line">
-                            <div class="line-half"></div>
-                        </div>
-                        <h4>All News and Transfer Today</h4>
-                    </div>
+                <div class="col-sm-12 col-md-4">
+                    <aside>
+                        <div class="upcoming-events">
+                            <div class="title">
+                                <div class="line">
+                                    <div class="line-half"></div>
+                                </div>
+                                <h4>Upcoming Events </h4>
+                            </div>
 
-                    <div class="news-tab">
-                        <div class="tab active">All News</div>
-                        <div class="tab">Today</div>
-                        <div class="tab">This Week</div>
-                        <div class="tab">This Month</div>
-                    </div>
-                    
-                    <div class="news-panel">
-                        <div class="row">
-
-                            <div class="col-lg-3">
-                                <div class="news-img"><img src="./media/arsenal.jpg" alt=""></div>
-                                <div class="news-detail">
-                                    <p>04 Dec 2022</p>
-                                    <h4>Signs of Arsenal getting stronger in the Premier League</h4>
-                                    <p>The victory over Wolves provided a comfortable distance for Arsenal at the top of the Premier League standings</p>
+                            <div class="events">
+                                <div class="event">
+                                    <div class="date">Dec 22 <i class="fa fa-star active"></i></div>
+                                    <div class="event-name"><h4>Yomari Fest and Cultural Program</h4></div>
+                                </div>
+                                <div class="event">
+                                    <div class="date">Dec 24 <i class="fa fa-star"></i></div>
+                                    <div class="event-name"><h4>Human Rights Rally</h4></div>
+                                </div>
+                                <div class="event">
+                                    <div class="date">Jan 02 <i class="fa fa-star"></i></div>
+                                    <div class="event-name"><h4>Quiz Competition</h4></div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
-                                <div class="news-img"><img src="./media/news - eudcationminister.jpg" alt=""></div>
-                                <div class="news-detail">
-                                    <p>04 Dec 2022</p>
-                                    <h4>Education Minister appointed ...</h4>
-                                    <p>After election of 2022, newly formed government has elected education minister ...</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                            <div class="news-img"><img src="./media/news - student accident.jpg" alt=""></div>
-                            <div class="news-detail">
-                                <p>04 Dec 2022</p>
-                                <h4>Student dies by a truck hit in...</h4>
-                                <p>The victory over Wolves provided a comfortable distance for Arsenal at the top of the Premier League standings</p>
-                            </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="news-img"><img src="./media/new - spacesation .jpg" alt=""></div>
-                            <div class="news-detail">
-                                <p>04 Dec 2022</p>
-                                <h4>What does the interior of a 110-cubic-meter space station look like?</h4>
-                                <p>How do the astronauts sleep, eat, live and work inside? Do they have any leisure activities? Check out the video to find out. #SpaceChina #TiangongInOrbit</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="news-img"><img src="./media/news - mbappe.jpg" alt=""></div>
-                            <div class="news-detail">
-                                <p>19 Nov 2022</p>
-                                <h3>I'm here to win the World Cup, not the Golden Boot: Mbappe</h3>
-                                <p>With superstar Kylian Mbappe's excellent performance, defending champion France defeated Poland 3-1 at Al Thuma Stadium on Sunday and entered the last eight of the World Cup 2022. Mbappe has also claimed the Golden Boot by being the top scorer in the World Cup in Qatar with 5 goals.</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
-            <aside>
-                <div class="upcoming-events">
-                    <div class="title">
-                        <div class="line">
-                            <div class="line-half"></div>
-                        </div>
-                        <h4>Upcoming Events </h4>
-                    </div>
-
-                    <div class="events">
-                        <div class="event">
-                            <div class="date">Dec 22 <i class="fa fa-star active"></i></div>
-                            <div class="event-name"><h4>Yomari Fest and Cultural Program</h4></div>
-                        </div>
-                        <div class="event">
-                            <div class="date">Dec 24 <i class="fa fa-star"></i></div>
-                            <div class="event-name"><h4>Human Rights Rally</h4></div>
-                        </div>
-                        <div class="event">
-                            <div class="date">Jan 02 <i class="fa fa-star"></i></div>
-                            <div class="event-name"><h4>Quiz Competition</h4></div>
-                        </div>
-                    </div>
-                </div>
-            </aside>
         </div>
     </div>
 </body>
